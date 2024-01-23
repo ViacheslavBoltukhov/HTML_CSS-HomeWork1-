@@ -1,137 +1,365 @@
 @font-face {
-    font-family: Gilroy-Bold;
-    src: url("font/Gilroy-Semibold.woff2");
+  font-family: Gilroy-Bold;
+  src: url("font/Gilroy-Semibold.woff2");
 }
 
 @font-face {
-    font-family: Gilroy-SemiBold;
-    src: url("font/Gilroy-Semibold.woff2");
+  font-family: Gilroy-SemiBold;
+  src: url("font/Gilroy-Semibold.woff2");
 }
 
 @font-face {
-    font-family: Gilroy-Medium;
-    src: url("font/Gilroy-Medium.woff2");
+  font-family: Gilroy-Medium;
+  src: url("font/Gilroy-Medium.woff2");
 }
 
 @font-face {
-    font-family: Gilroy;
-    src: url("font/Gilroy-Regular.woff2");
+  font-family: Gilroy;
+  src: url("font/Gilroy-Regular.woff2");
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-body{
-    background: #FFF;
-    font-family: 'Gilroy';
-    font-weight: 400;
+.content {
+  width: 100%;
 }
 
-.content, 
-.footer{
-    max-width: 1170px;
-    margin: 0 auto;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 84px;
+  column-gap: 500px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.header .logo__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+}
+.header .logo__text .grow {
+  color: #000000;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 84px;
+.header .logo__text .be {
+  color: #f25822;
 }
-.logo__text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    font-family: 'Gilroy-Bold';
-    font-size: 24px;
-}
-.grow{
-    color: #000000;
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  width: 533px;
+  font-size: 14px;
+  line-height: 17px;
 }
 
-.be{
-    color: #F25822;
-}
-.nav {
-    display: flex;
-    justify-content: space-between;
-    width: 533px;
-    font-size: 14px;
-    line-height: 17px;
+.header .nav .active {
+  color: #f25822;
+  font-family: "Gilroy-SemiBold";
 }
 
-.nav__link {
-    color: #000;
-    font-family: 'Gilroy-Medium';
-}
-
-.nav__link--active {
-    color: #F25822;
-    font-family: 'Gilroy-SemiBold';
+.header .nav .link {
+  color: #000;
+  font-family: "Gilroy-Medium";
 }
 
 .main {
-    display: flex;
-    gap: 39px;
-    margin-bottom: 162px;
+  display: flex;
+  justify-content: center;
+  gap: 39px;
+  margin-bottom: 162px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 
-.main__info{
-    max-width: 522px;
+.main__info {
+  max-width: 522px;
 }
 
 .main__title {
-    color: #000;
-    font-size: 60px;
-    font-family: 'Gilroy-Bold';
-    margin-bottom: 17px;
+  color: #000;
+  font-size: 60px;
+  font-family: "Gilroy-Bold";
+  margin-bottom: 17px;
 }
 
 .main__text {
-    color: #888;
-    font-size: 20px;
-    font-family: 'Gilroy-Medium';
-    margin-bottom: 37px;
+  color: #888;
+  font-size: 20px;
+  font-family: "Gilroy-Medium";
+  margin-bottom: 37px;
 }
 
 .btn_group {
-    display: flex;
-    align-items: center;
-    gap: 72px;
-    font-family: 'Gilroy-Bold';
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  font-family: "Gilroy-Bold";
 }
-
 
 .btn {
-    
-    font-size: 15px;
-    width: 140px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 50px;
-    background: #F25822;
-    border: 0;
-    color: #FFF;
-    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+  font-size: 15px;
+  width: 140px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #f25822;
+  border: 0;
+  color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
 }
-.text__btn{
-    color: #AAA;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
+.text__btn {
+  color: #aaa;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.footer__logo {
-    display: flex;
-    justify-content: space-between;
-    margin: 97px auto;
+
+.bg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.brand__logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.brand__logo .img {
+  margin: 97px 24px 97px 24px;
+}
+.features {
+  width: 100%;
+  margin-bottom: 192px;
+}
+.features .background {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.features .background .features02 {
+  background: #fff;
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+.features .background .features01 {
+  border-radius: 15px;
+}
+.features .background .features03 {
+  border-radius: 15px;
+}
+.features .background .title {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 17px;
+}
+.features .background .text {
+  color: #666;
+  font-family: Gilroy-Regular;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 310px;
+  margin-top: 17px;
+}
+.features .background .buttom {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 25px;
+}
+
+.servise {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.servise .secation__title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.servise .secation__title .title {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 19px;
+}
+.servise .secation__title .secation {
+  color: #666;
+  text-align: center;
+  font-family: Gilroy-Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.servise .block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.servise .block .servise01 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.servise .block .servise01 .title {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 22px;
+  margin-top: 15px;
+}
+.servise .block .servise01 .text {
+  color: #aaa;
+  text-align: center;
+  font-family: Gilroy-Regular;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 310px;
+  margin-bottom: 39px;
+}
+.servise .block .servise01 .button {
+  font-size: 15px;
+  width: 140px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #f25822;
+  border: 0;
+  color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+}
+
+.servise .block .servise02 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+.servise .block .servise02 .title {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 22px;
+}
+.servise .block .servise02 .text {
+  color: #aaa;
+  text-align: center;
+  font-family: Gilroy-Regular;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 310px;
+  margin-bottom: 39px;
+}
+.servise .block .servise02 .button {
+  font-size: 15px;
+  width: 140px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #f25822;
+  border: 0;
+  color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+}
+.servise .block .servise03 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.servise .block .servise03 .title {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 22px;
+}
+.servise .block .servise03 .text {
+  color: #aaa;
+  text-align: center;
+  font-family: Gilroy-Regular;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 310px;
+  margin-bottom: 39px;
+}
+.servise .block .servise03 .button {
+  font-size: 15px;
+  width: 140px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #f25822;
+  border: 0;
+  color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
 }
