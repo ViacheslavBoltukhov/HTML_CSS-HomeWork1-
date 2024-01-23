@@ -149,7 +149,9 @@ a {
 }
 .features {
   width: 100%;
-  margin-bottom: 192px;
+  background: #FFF;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .features .background {
   display: flex;
@@ -202,25 +204,29 @@ a {
 
 .servise {
   width: 100%;
-  margin: 100px auto;
+  background: #FAFAFA;
+  margin-bottom: 100px;
 }
 
 .servise .secation__title {
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   align-items: center;
+
 }
 .servise .secation__title .title {
+  margin-top: 100px;
   color: #000;
   font-family: Gilroy-Bold;
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 19px;
+
 }
 .servise .secation__title .secation {
   color: #666;
@@ -282,6 +288,7 @@ a {
   border: 0;
   color: #fff;
   box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  margin-bottom: 50px;
 }
 
 .servise .block .servise02 {
@@ -324,6 +331,7 @@ a {
   border: 0;
   color: #fff;
   box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  margin-bottom: 50px;
 }
 .servise .block .servise03 {
   display: flex;
@@ -363,4 +371,5 @@ a {
   border: 0;
   color: #fff;
   box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  margin-bottom: 50px;
 }
