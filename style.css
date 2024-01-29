@@ -337,6 +337,7 @@ padding: 40px 16px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        
     }
     .header-nav {
         width: 60%;
@@ -368,6 +369,7 @@ padding: 40px 16px;
         gap: 32px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        justify-items: center;
     }
 
     .aside-left {
@@ -409,6 +411,7 @@ padding: 40px 16px;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 48%);
+        justify-items: center;
     
     }
     
