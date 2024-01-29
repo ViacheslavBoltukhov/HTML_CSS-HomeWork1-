@@ -186,14 +186,7 @@ padding: 40px 16px;
     justify-items: center;
     gap: 30px;
 }
-.item_left {
-    border-radius: 10px;
-    background: #132035;
-    padding: 30px;
-    display: grid;
-    justify-items: center;
-    gap: 30px;
-}
+
 .heading {
     color: var(--ffffff, #FFF);
     text-align: center;
@@ -402,112 +395,6 @@ padding: 40px 16px;
         width: 47%; 
     } 
 
-    .item_big {
-        display: none;
-    }
-
-    .item_left {
-        display: none;
-    }
-
-    .reviews-left {
-        width: 55%;
-        padding-bottom: 64px;
-    }
-
-    .reviews-right {
-        display: flex;
-        justify-content: center;
-    }
-
-    .contacts {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 48%);
-    
-    }
-    
-}
-
-/* 2. Создать планшетную версию проекта. */
-
-@media (min-width: 377px) and (max-width: 768px) {
-    .container {
-        display: flex;
-        width: 100%;
-        padding: 39px 0px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .header-nav {
-        width: 60%;
-        justify-content: center;
-        
-
-    }
-    .flex {
-        display: flex;
-        justify-content: center;
-    }
-
-    .main-left {
-        width: 80%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 128px;
-    }
-
-    .main-right {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .logo2 {
-        display: grid;
-        gap: 32px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .aside-left {
-        width: 77%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-right: 0px;
-    }
-
-    .aside-right {
-        padding-left: 0px;
-    }
-
-    .content {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
-
-    }
-
-    .item {
-        width: 47%; 
-    } 
-    .item_big {
-        display: none;
-    }
-
-    .item_left {
-        display: none;
-    }
-
-    .item__img {
-        width: 47%; 
-    }
-
     .reviews-left {
         width: 55%;
         padding-bottom: 64px;
@@ -529,7 +416,7 @@ padding: 40px 16px;
 
 /* 2. Создать мобильную версию проекта */
 
-@media (max-width: 376px) {
+@media (min-width: 319px) and (max-width: 767px) {
     .container {
         display: flex;
         width: 100%;
@@ -657,12 +544,6 @@ padding: 40px 16px;
         width: 95%;
     }
 
-    .item_big {
-        display: none;
-    }
-    .item_left {
-        display: none;
-    }
     .reviews {
         padding-bottom: 209px;
     }
