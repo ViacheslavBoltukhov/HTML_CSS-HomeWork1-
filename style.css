@@ -546,6 +546,9 @@ padding: 40px 16px;
     .item {
         width: 95%;
     }
+    .item_big {
+        display: none;
+    }
 
     .reviews {
         padding-bottom: 209px;
