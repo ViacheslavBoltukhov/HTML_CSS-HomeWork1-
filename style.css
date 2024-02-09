@@ -29,7 +29,7 @@ h1{
 
 .carousel-dark .carousel-control-next-icon{
     filter: brightness(0) saturate(100%) invert(10%) sepia(96%) saturate(5278%) hue-rotate(360deg) brightness(116%) contrast(116%);
-    background-image: url(/Seminar2/img/scale.png);
+    background-image: url("./img/scale.png");
 }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
